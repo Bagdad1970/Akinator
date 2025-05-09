@@ -1,0 +1,24 @@
+{
+  "Version": 1,
+  "Hash": "kHraLH6t2uaQkdX5EzZI5SV+2+f1dTV39yF/bmFMF+I=",
+  "Source": "VueApp1.Server",
+  "BasePath": "_content/VueApp1.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\Василий Осипов\\source\\repos\\VueApp1\\vueapp1.client\\vueapp1.client.esproj",
+      "Version": 2,
+      "Source": "vueapp1.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
