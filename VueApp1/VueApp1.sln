@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35806.99 d17.13
+VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "vueapp1.client", "vueapp1.client\vueapp1.client.esproj", "{77D41B84-BDD9-C8D4-CBAF-73419802FDA2}"
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "AkinatorFrontend", "vueapp1.client\AkinatorFrontend.esproj", "{77D41B84-BDD9-C8D4-CBAF-73419802FDA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VueApp1.Server", "VueApp1.Server\VueApp1.Server.csproj", "{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AkinatorBackend", "VueApp1.Server\AkinatorBackend.csproj", "{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
