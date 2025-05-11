@@ -262,3 +262,5 @@ save_characteristic(QID, Animal, Answer) :-
 
 
 
+animal(no, [yes,yes,no,no,no,no,no,no,no]).
+animal(no, [yes,no,no,no,no,no,no,no,yes]).

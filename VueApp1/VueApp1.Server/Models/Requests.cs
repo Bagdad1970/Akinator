@@ -1,4 +1,4 @@
-namespace AkinatorBackend.Models;
+namespace Akinator.Models;
 
 public record AnswerRequest(string Answer);
 public record RegisterModel(string Username, string Email, string Password);

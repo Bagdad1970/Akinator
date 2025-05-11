@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 
-namespace Akinator;
+namespace Akinator.Database;
 
 public static class SeedData
 {

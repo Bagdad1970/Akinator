@@ -1,27 +1,22 @@
-using Akinator.Database;
+using Akinator.Models.Requests;
+using System.Diagnostics;
+using System.Text;
 using Akinator.Models.Responses;
-using Microsoft.EntityFrameworkCore;
 
 namespace Akinator.Services;
 
 public class GameService
 {
-    private readonly AppDBContext _dbContext;
     private readonly Dictionary<string, GameSession> _activeGames = new();
-
-    public GameService(AppDBContext dbContext)
-    {
-        _dbContext = dbContext;
-    }
 
     public GameStateDto StartNewGame(string userId)
     {
-        var gameSession = new GameSession(_dbContext);
+        var gameSession = new GameSession();
         _activeGames[userId] = gameSession;
-
+        var (welcome, question) = gameSession.Start();
         return new GameStateDto
         {
-            Question = gameSession.GetCurrentQuestion(),
+            Question = $"{welcome}\n{question}",
             GameOver = false
         };
     }
@@ -31,28 +26,36 @@ public class GameService
         if (!_activeGames.TryGetValue(userId, out var gameSession))
             throw new InvalidOperationException("Game not started");
 
-        if (!IsValidAnswer(answer))
-            throw new InvalidOperationException("Invalid answer. Use 'yes' or 'no'.");
-
         var response = gameSession.ProcessAnswer(answer);
+        if (!response.GameActive)
+        {
+            _activeGames.Remove(userId);
+        }
 
         return new GameStateDto
         {
-            Question = response.NextQuestion ?? "",
-            GameOver = response.GameOver,
-            Guess = response.GuessedCharacter,
-            IsCorrect = response.IsCorrect
+            Question = response.Response,
+            GameOver = !response.GameActive,
+            Guess = response.IsGuess ? ExtractGuess(response.Response) : null,
+            IsCorrect = response.Response.Contains("Отлично! Я угадал!")
         };
     }
 
     public void EndGame(string userId)
     {
-        if (!_activeGames.Remove(userId))
-            throw new InvalidOperationException("No active game found");
+        if (_activeGames.TryGetValue(userId, out var gameSession))
+        {
+            gameSession.End();
+            _activeGames.Remove(userId);
+        }
     }
 
-    private bool IsValidAnswer(string answer)
+    private string ExtractGuess(string response)
     {
-        return answer.ToLower() is "yes" or "no";
+        if (response.StartsWith("Предположение:"))
+        {
+            return response.Replace("Предположение: Это ", "").Replace("? (yes/no): ", "").Trim();
+        }
+        return null;
     }
 }
