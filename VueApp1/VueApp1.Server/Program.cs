@@ -8,13 +8,15 @@ builder.Services.AddCors(options => options.AddPolicy("AllowAll", policy =>
 var app = builder.Build();
 app.UseCors("AllowAll");
 
-var akinPath = "/akinator.pl";
+var akinPath = "akinator.pl";
 Process prologProcess = null;
 StreamWriter inputWriter = null;
 StreamReader outputReader = null;
 bool sessionActive = false;
+bool awaitingAnimalName = false;
+bool awaitingQuestionText = false;
+bool awaitingQuestionAnswer = false;
 
-// Проверка загрузки файла
 app.MapGet("/check", () =>
 {
     var exists = File.Exists(akinPath);
@@ -48,13 +50,14 @@ app.MapPost("/start", async () =>
     inputWriter = prologProcess.StandardInput;
     outputReader = prologProcess.StandardOutput;
 
-    // Запускаем игру
-    await inputWriter.WriteLineAsync("start.");
+    await inputWriter.WriteLineAsync("play.");
     await inputWriter.FlushAsync();
 
     sessionActive = true;
+    awaitingAnimalName = false;
+    awaitingQuestionText = false;
+    awaitingQuestionAnswer = false;
 
-    // Читаем приветственное сообщение и первый вопрос
     var welcomeMessage = await outputReader.ReadLineAsync();
     var firstQuestion = await outputReader.ReadLineAsync();
 
@@ -72,30 +75,60 @@ app.MapPost("/answer", async (AnswerRequest request) =>
         return Results.BadRequest("Сначала запустите сессию через /start");
     }
 
-    // Отправляем ответ (1/0/2 в зависимости от вопроса)
-    await inputWriter.WriteLineAsync(request.Answer + ".");
+    var answer = request.Answer;
+    if (awaitingAnimalName || awaitingQuestionText)
+    {
+        answer = $"'{answer}'"; // Оборачиваем в кавычки для Prolog
+    }
+    await inputWriter.WriteLineAsync(answer + ".");
     await inputWriter.FlushAsync();
 
-    // Читаем ответ Prolog (следующий вопрос или результат)
     var response = new StringBuilder();
     string line;
+    awaitingAnimalName = false;
+    awaitingQuestionText = false;
+    awaitingQuestionAnswer = false;
+
     while ((line = await outputReader.ReadLineAsync()) != null)
     {
-        // Пропускаем пустые строки и приглашения Prolog
         if (string.IsNullOrWhiteSpace(line) || line == "|:") continue;
 
-        // Проверяем на конец игры
-        if (line.StartsWith("Я думаю, вы загадали:") ||
-            line.StartsWith("Ни одно животное") ||
-            line.StartsWith("Вопросы закончились") ||
-            line.StartsWith("Возможные варианты:"))
+        if (line.Contains("Как называется ваше животное?"))
+        {
+            awaitingAnimalName = true;
+            response.AppendLine(line);
+            break;
+        }
+
+        if (line.Contains("Пожалуйста, введите новый вопрос"))
+        {
+            awaitingQuestionText = true;
+            response.AppendLine(line);
+            break;
+        }
+
+        if (line.Contains("Какой ответ для"))
+        {
+            awaitingQuestionAnswer = true;
+            response.AppendLine(line);
+            break;
+        }
+
+        if (line.StartsWith("Отлично! Я угадал!") ||
+            line.StartsWith("Спасибо! Я") ||
+            line.StartsWith("Игра завершена."))
         {
             sessionActive = false;
             response.AppendLine(line);
             break;
         }
 
-        // Если это новый вопрос
+        if (line.StartsWith("Предположение:"))
+        {
+            response.AppendLine(line);
+            break;
+        }
+
         if (line.EndsWith("?") || line.Contains("Введите ответ:"))
         {
             response.AppendLine(line);
@@ -108,7 +141,10 @@ app.MapPost("/answer", async (AnswerRequest request) =>
     return Results.Ok(new
     {
         response = response.ToString().Trim(),
-        gameActive = sessionActive
+        gameActive = sessionActive,
+        awaitingAnimalName,
+        awaitingQuestionText,
+        awaitingQuestionAnswer
     });
 });
 
@@ -120,6 +156,9 @@ app.MapPost("/end", () =>
         prologProcess.Kill();
     }
     sessionActive = false;
+    awaitingAnimalName = false;
+    awaitingQuestionText = false;
+    awaitingQuestionAnswer = false;
     return Results.Ok("Сессия завершена");
 });
 
