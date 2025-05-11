@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Akinator.Services;
-using Akinator.Models.Requests;
+using Akinator.Models.Responses;
 
 namespace Akinator.Controllers;
 

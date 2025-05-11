@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Identity;
-using Akinator.Models.Requests;
+using Akinator.Models.Responses;
 
 namespace Akinator.Services;
 

@@ -33,7 +33,7 @@
 
 	<ItemGroup>
 	  <Folder Include="Database\" />
-	  <Folder Include="Models\Entities\" />
+	  <Folder Include="Models\Requests\" />
 	  <Folder Include="Services\" />
 	</ItemGroup>
 

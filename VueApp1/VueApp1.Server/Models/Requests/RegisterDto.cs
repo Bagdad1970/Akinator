@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Akinator.Models.Requests;
+namespace Akinator.Models.Responses;
 
 public class RegisterDto
 {
