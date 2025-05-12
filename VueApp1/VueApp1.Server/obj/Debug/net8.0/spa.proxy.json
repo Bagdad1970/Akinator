@@ -3,7 +3,7 @@
 "ServerUrl": "https://localhost:50028",
 "RedirectUrl": "",
 "LaunchCommand": "npm run dev",
-"WorkingDirectory": "C:\\Users\\Василий Осипов\\source\\repos\\VueApp1\\VueApp1.Server\\..\\vueapp1.client",
+"WorkingDirectory": "C:\\Users\\Василий Осипов\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\..\\vueapp1.client",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }

@@ -1,6 +1,5 @@
 using System.Diagnostics;
 using System.Text;
-
 using Akinator.Models.Requests;
 using Akinator.Models.Responses;
 
@@ -15,7 +14,7 @@ public class GameSession
     {
         var akinPath = "akinator.pl";
         if (!File.Exists(akinPath))
-            throw new InvalidOperationException("Prolog file not found");
+            throw new InvalidOperationException("Файл Prolog не найден");
 
         _prologProcess = new Process
         {
@@ -45,13 +44,13 @@ public class GameSession
 
         var welcome = _outputReader.ReadLineAsync().GetAwaiter().GetResult();
         var question = _outputReader.ReadLineAsync().GetAwaiter().GetResult();
-        return (welcome ?? "Welcome to the game!", question ?? "No question available");
+        return (welcome ?? "Добро пожаловать в игру!", question ?? "Вопрос недоступен");
     }
 
     public ProcessResponse ProcessAnswer(string answer)
     {
         if (!_sessionActive || _prologProcess.HasExited)
-            throw new InvalidOperationException("Game session not active");
+            throw new InvalidOperationException("Игровая сессия не активна");
 
         // Форматируем ответ для Prolog
         var formattedAnswer = (answer.ToLower() is "yes" or "no") ? answer.ToLower() : $"'{answer}'";
@@ -61,6 +60,9 @@ public class GameSession
         var response = new StringBuilder();
         bool isGuess = false;
         bool gameActive = true;
+        bool awaitingAnimalName = false;
+        bool awaitingNewQuestion = false;
+        bool awaitingNewQuestionAnswer = false;
 
         while (true)
         {
@@ -80,16 +82,152 @@ public class GameSession
                 break;
             }
 
+            if (line.Contains("Сообщение: Как называется ваше животное"))
+            {
+                awaitingAnimalName = true;
+                break;
+            }
+
+            if (line.Contains("Пожалуйста, введите новый вопрос"))
+            {
+                awaitingNewQuestion = true;
+                break;
+            }
+
+            if (line.Contains("Какой ответ для"))
+            {
+                awaitingNewQuestionAnswer = true;
+                break;
+            }
+
             if (line.StartsWith("Отлично! Я угадал!") ||
+                line.StartsWith("Игра завершена.") ||
+                line.StartsWith("Спасибо! Я"))
+            {
+                gameActive = false;
+                break;
+            }
+        }
+
+        return new ProcessResponse
+        {
+            Response = response.ToString().Trim(),
+            GameActive = gameActive,
+            IsGuess = isGuess,
+            AwaitingAnimalName = awaitingAnimalName,
+            AwaitingNewQuestion = awaitingNewQuestion,
+            AwaitingNewQuestionAnswer = awaitingNewQuestionAnswer
+        };
+    }
+
+    public ProcessResponse SubmitAnimal(string animalName)
+    {
+        if (!_sessionActive || _prologProcess.HasExited)
+            throw new InvalidOperationException("Игровая сессия не активна");
+
+        // Форматируем имя животного для Prolog (в одинарных кавычках)
+        var formattedAnimal = $"'{animalName}'";
+        _inputWriter.WriteLineAsync(formattedAnimal + ".").GetAwaiter().GetResult();
+        _inputWriter.FlushAsync().GetAwaiter().GetResult();
+
+        var response = new StringBuilder();
+        bool gameActive = true;
+        bool awaitingNewQuestion = false;
+        bool awaitingNewQuestionAnswer = false;
+        bool isGuess = false;
+
+        while (true)
+        {
+            var line = _outputReader.ReadLineAsync().GetAwaiter().GetResult();
+            if (string.IsNullOrWhiteSpace(line) || line == "|:") continue;
+
+
+            if (line.StartsWith("Спасибо! Я") ||
                 line.StartsWith("Игра завершена."))
             {
                 gameActive = false;
                 break;
             }
+        }
 
-            if (line.Contains("Как называется ваше животное?") ||
-                line.Contains("Пожалуйста, введите новый вопрос") ||
-                line.Contains("Какой ответ для"))
+        return new ProcessResponse
+        {
+            Response = response.ToString().Trim(),
+            GameActive = gameActive,
+            IsGuess = isGuess,
+            AwaitingAnimalName = false,
+            AwaitingNewQuestion = awaitingNewQuestion,
+            AwaitingNewQuestionAnswer = awaitingNewQuestionAnswer
+        };
+    }
+    public ProcessResponse SubmitNewQuestion(string questionText)
+    {
+        if (!_sessionActive || _prologProcess.HasExited)
+            throw new InvalidOperationException("Игровая сессия не активна");
+
+        // Форматируем текст вопроса для Prolog
+        var formattedQuestion = $"'{questionText}'";
+        _inputWriter.WriteLineAsync(formattedQuestion + ".").GetAwaiter().GetResult();
+        _inputWriter.FlushAsync().GetAwaiter().GetResult();
+
+        var response = new StringBuilder();
+        bool gameActive = true;
+        bool awaitingNewQuestionAnswer = false;
+
+        while (true)
+        {
+            var line = _outputReader.ReadLineAsync().GetAwaiter().GetResult();
+            if (string.IsNullOrWhiteSpace(line) || line == "|:") continue;
+
+            response.AppendLine(line);
+
+            if (line.Contains("Какой ответ для"))
+            {
+                awaitingNewQuestionAnswer = true;
+                break;
+            }
+
+            if (line.StartsWith("Спасибо! Я") ||
+                line.StartsWith("Игра завершена."))
+            {
+                gameActive = false;
+                break;
+            }
+        }
+
+        return new ProcessResponse
+        {
+            Response = response.ToString().Trim(),
+            GameActive = gameActive,
+            IsGuess = false,
+            AwaitingAnimalName = false,
+            AwaitingNewQuestion = false,
+            AwaitingNewQuestionAnswer = awaitingNewQuestionAnswer
+        };
+    }
+
+    public ProcessResponse SubmitNewQuestionAnswer(string answer)
+    {
+        if (!_sessionActive || _prologProcess.HasExited)
+            throw new InvalidOperationException("Игровая сессия не активна");
+
+        // Форматируем ответ для Prolog
+        var formattedAnswer = answer.ToLower();
+        _inputWriter.WriteLineAsync(formattedAnswer + ".").GetAwaiter().GetResult();
+        _inputWriter.FlushAsync().GetAwaiter().GetResult();
+
+        var response = new StringBuilder();
+        bool gameActive = false;
+
+        while (true)
+        {
+            var line = _outputReader.ReadLineAsync().GetAwaiter().GetResult();
+            if (string.IsNullOrWhiteSpace(line) || line == "|:") continue;
+
+            response.AppendLine(line);
+
+            if (line.StartsWith("Спасибо! Я") ||
+                line.StartsWith("Игра завершена."))
             {
                 break;
             }
@@ -99,7 +237,10 @@ public class GameSession
         {
             Response = response.ToString().Trim(),
             GameActive = gameActive,
-            IsGuess = isGuess
+            IsGuess = false,
+            AwaitingAnimalName = false,
+            AwaitingNewQuestion = false,
+            AwaitingNewQuestionAnswer = false
         };
     }
 
@@ -119,4 +260,7 @@ public class ProcessResponse
     public string Response { get; set; }
     public bool GameActive { get; set; }
     public bool IsGuess { get; set; }
+    public bool AwaitingAnimalName { get; set; }
+    public bool AwaitingNewQuestion { get; set; }
+    public bool AwaitingNewQuestionAnswer { get; set; }
 }

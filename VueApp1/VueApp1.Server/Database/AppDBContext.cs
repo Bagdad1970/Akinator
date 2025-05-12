@@ -11,11 +11,13 @@ public class AppDBContext : IdentityDbContext<IdentityUser, IdentityRole, string
 
     public DbSet<Question> Questions { get; set; }
 
+    public DbSet<Users> Users { get; set; }
+
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
 
-        // Конфигурация вопросов
+        // ???????????? ????????
         builder.Entity<Question>().HasData(
             new Question { Id = 1, Text = "Is your character real?", YesNextQuestionId = 2, NoNextQuestionId = 3 },
             new Question { Id = 2, Text = "Is your character a historical figure?", Guess = "Historical Figure" },

@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\akinatorfinal\\akinator\\vueapp1\\vueapp1.server\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|solutionrelative:vueapp1.server\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\akinatorfinal\\akinator\\vueapp1\\vueapp1.server\\models\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|solutionrelative:vueapp1.server\\models\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\akinatorfinal\\akinator\\vueapp1\\vueapp1.server\\database\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|solutionrelative:vueapp1.server\\database\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\akinatorfinal\\akinator\\vueapp1\\vueapp1.server\\models\\entities\\questions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|solutionrelative:vueapp1.server\\models\\entities\\questions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\akinatorfinal\\akinator\\vueapp1\\vueapp1.server\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|solutionrelative:vueapp1.server\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\akinatorfinal\\akinator\\vueapp1\\vueapp1.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|solutionrelative:vueapp1.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\akinatorfinal\\akinator\\vueapp1\\vueapp1.server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|solutionrelative:vueapp1.server\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\akinatorfinal\\akinator\\vueapp1\\vueapp1.server\\models\\requests\\answerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|solutionrelative:vueapp1.server\\models\\requests\\answerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\akinatorfinal\\akinator\\vueapp1\\vueapp1.server\\models\\entities\\animals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|solutionrelative:vueapp1.server\\models\\entities\\animals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\akinatorfinal\\akinator\\vueapp1\\vueapp1.server\\models\\requests\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|solutionrelative:vueapp1.server\\models\\requests\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\akinatorfinal\\akinator\\vueapp1\\vueapp1.server\\services\\gamesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5115AEEE-9EFC-47B7-99C5-5A5C17E7532E}|VueApp1.Server\\AkinatorBackend.csproj|solutionrelative:vueapp1.server\\services\\gamesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "VueApp1.Server\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Services\\AuthService.cs",
+              "RelativeToolTip": "VueApp1.Server\\Services\\AuthService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA0wCUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T23:44:13.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "VueApp1.Server\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "VueApp1.Server\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAACgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T23:43:26.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Models\\Entities\\Users.cs",
+              "RelativeDocumentMoniker": "VueApp1.Server\\Models\\Entities\\Users.cs",
+              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Models\\Entities\\Users.cs",
+              "RelativeToolTip": "VueApp1.Server\\Models\\Entities\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T23:41:30.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Database\\SeedData.cs",
+              "RelativeDocumentMoniker": "VueApp1.Server\\Database\\SeedData.cs",
+              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Database\\SeedData.cs",
+              "RelativeToolTip": "VueApp1.Server\\Database\\SeedData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T23:38:27.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Animals.cs",
+              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Models\\Entities\\Animals.cs",
+              "RelativeDocumentMoniker": "VueApp1.Server\\Models\\Entities\\Animals.cs",
+              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Models\\Entities\\Animals.cs",
+              "RelativeToolTip": "VueApp1.Server\\Models\\Entities\\Animals.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T23:32:56.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Questions.cs",
+              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Models\\Entities\\Questions.cs",
+              "RelativeDocumentMoniker": "VueApp1.Server\\Models\\Entities\\Questions.cs",
+              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Models\\Entities\\Questions.cs",
+              "RelativeToolTip": "VueApp1.Server\\Models\\Entities\\Questions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T23:32:50.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Database\\AppDBContext.cs",
+              "RelativeDocumentMoniker": "VueApp1.Server\\Database\\AppDBContext.cs",
+              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Database\\AppDBContext.cs",
+              "RelativeToolTip": "VueApp1.Server\\Database\\AppDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T22:53:01.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AnswerRequest.cs",
+              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Models\\Requests\\AnswerRequest.cs",
+              "RelativeDocumentMoniker": "VueApp1.Server\\Models\\Requests\\AnswerRequest.cs",
+              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Models\\Requests\\AnswerRequest.cs",
+              "RelativeToolTip": "VueApp1.Server\\Models\\Requests\\AnswerRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T22:52:59.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Models\\Requests\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "VueApp1.Server\\Models\\Requests\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Models\\Requests\\RegisterDto.cs",
+              "RelativeToolTip": "VueApp1.Server\\Models\\Requests\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T22:52:57.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GameSession.cs",
+              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Services\\GameSession.cs",
+              "RelativeDocumentMoniker": "VueApp1.Server\\Services\\GameSession.cs",
+              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Services\\GameSession.cs",
+              "RelativeToolTip": "VueApp1.Server\\Services\\GameSession.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAwwDcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T22:13:16.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Program.cs",
+              "RelativeDocumentMoniker": "VueApp1.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\Program.cs",
+              "RelativeToolTip": "VueApp1.Server\\Program.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAIAwwH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T22:07:20.018Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
