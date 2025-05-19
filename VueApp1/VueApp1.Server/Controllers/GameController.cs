@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Akinator.Services;
 using Akinator.Models.Requests;
+using Akinator.Models.Entities;
 
 namespace Akinator.Controllers;
 
@@ -34,20 +35,6 @@ public class GameController : ControllerBase
         {
             var response = _gameService.ProcessAnswer(request.Answer, User.Identity.Name);
             return Ok(response);
-        }
-        catch (InvalidOperationException ex)
-        {
-            return BadRequest(new { Message = ex.Message });
-        }
-    }
-
-    [HttpPost("end")]
-    public IActionResult EndGame()
-    {
-        try
-        {
-            _gameService.EndGame(User.Identity.Name);
-            return Ok(new { Message = "Game ended" });
         }
         catch (InvalidOperationException ex)
         {

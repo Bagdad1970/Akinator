@@ -1,12 +1,20 @@
+using Akinator.Database;
+using Akinator.Models.Entities;
 using Akinator.Models.Requests;
 using Akinator.Models.Responses;
+using Microsoft.EntityFrameworkCore;
 using System;
+using System.Diagnostics;
+using System.Xml;
+
 
 namespace Akinator.Services;
 
 public class GameService
 {
     private readonly Dictionary<string, GameSession> _activeGames = new();
+
+    private readonly AppDBContext _dbContext;
 
     public GameStateDto StartNewGame(string userId)
     {
@@ -60,15 +68,6 @@ public class GameService
             IsCorrect = false,
             AwaitingAnimalName = false
         };
-    }
-
-    public void EndGame(string userId)
-    {
-        if (_activeGames.TryGetValue(userId, out var gameSession))
-        {
-            gameSession.End();
-            _activeGames.Remove(userId);
-        }
     }
 
     private string ExtractGuess(string response)

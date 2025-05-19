@@ -11,157 +11,143 @@ question(7, 'Имеет ли животное полосы?', [yes, no]).
 question(8, 'Является ли животное ядовитым?', [yes, no]).
 question(9, 'Имеет ли животное рыжий окрас?', [yes, no]).
 
-% Животные
-animal('Elephant', [yes, no, no, no, no, yes, no, no, no]).  % Слон  
-animal('Dolphin', [yes, yes, yes, no, no, no, no, no, no]).  % Дельфин  
-animal('Bat', [yes, no, yes, yes, no, no, no, no, no]).      % Летучая мышь  
-animal('Polar Bear', [yes, no, yes, no, yes, no, no, no, no]). % Белый медведь  
-animal('Lion', [yes, no, yes, no, no, yes, no, no, yes]).     % Лев  
-animal('Tiger', [yes, no, yes, no, no, no, yes, no, no]).    % Тигр  
-animal('Eagle', [no, no, yes, yes, no, no, no, no, no]).     % Орёл  
-animal('Shark', [no, yes, yes, no, no, no, no, no, no]).      % Акула  
-animal('Giraffe', [yes, no, no, no, no, yes, no, no, no]).    % Жираф  
-animal('Zebra', [yes, no, no, no, no, yes, yes, no, no]).     % Зебра  
-animal('Kangaroo', [yes, no, no, no, no, no, no, no, no]).   % Кенгуру  
-animal('Cobra', [no, no, yes, no, no, yes, no, yes, no]).     % Кобра  
-animal('Fox', [yes, no, yes, no, no, no, no, no, yes]).      % Лиса  
-animal('Octopus', [no, yes, yes, no, no, no, no, yes, no]).   % Осьминог  
-animal('Flamingo', [no, no, no, yes, no, no, no, no, yes]).   % Фламинго  
-animal('Hippopotamus', [yes, yes, no, no, no, yes, no, no, no]). % Бегемот  
-animal('Raccoon', [yes, no, yes, no, no, no, yes, no, no]).   % Енот  
-animal('Scorpion', [no, no, yes, no, no, no, no, yes, no]).   % Скорпион  
-animal('Peacock', [no, no, no, yes, no, no, no, no, no]).     % Павлин  
-animal('Wolf', [yes, no, yes, no, no, no, no, no, no]).         % Волк  
-animal('Koala', [yes, no, no, no, no, no, no, no, no]).         % Коала  
-animal('Jellyfish', [no, yes, yes, no, no, no, no, yes, no]).   % Медуза  
-animal('Cheetah', [yes, no, yes, no, no, yes, yes, no, no]).     % Гепард  
-animal('Owl', [no, no, yes, yes, no, no, no, no, no]).          % Сова  
-animal('Seal', [yes, yes, yes, no, yes, no, no, no, no]).        % Тюлень  
-animal('Rhino', [yes, no, no, no, no, yes, no, no, no]).         % Носорог  
-animal('Parrot', [no, no, no, yes, no, no, no, no, yes]).       % Попугай  
-animal('Panda', [yes, no, no, no, no, no, no, no, no]).         % Панда  
-animal('Crocodile', [no, yes, yes, no, no, yes, no, no, no]).   % Крокодил  
-animal('Gorilla', [yes, no, no, no, no, yes, no, no, no]).      % Горилла  
-animal('Chimpanzee', [yes, no, no, no, no, yes, no, no, no]).   % Шимпанзе   
-animal('Lemur', [yes, no, no, no, no, no, no, no, no]).         % Лемур  
-animal('Walrus', [yes, yes, yes, no, yes, no, no, no, no]).      % Морж  
-animal('Hedgehog', [yes, no, yes, no, no, no, no, no, no]).      % Ёж  
-animal('Platypus', [yes, yes, yes, no, no, no, no, yes, no]).    % Утконос  
-animal('Falcon', [no, no, yes, yes, no, no, no, no, no]).        % Сокол  
-animal('Antelope', [yes, no, no, no, no, yes, no, no, no]).      % Антилопа  
-animal('Armadillo', [yes, no, no, no, no, no, no, no, no]).      % Броненосец   
-animal('Moose', [yes, no, no, no, yes, no, no, no, no]).         % Лось  
-animal('Electric Eel', [no, yes, yes, no, no, no, no, yes, no]). % Электрический угорь  
-animal('Sloth', [yes, no, no, no, no, no, no, no, no]).          % Ленивец  
-animal('Toucan', [no, no, no, yes, no, no, no, no, yes]).       % Тукан   
-animal('Narwhal', [yes, yes, yes, no, yes, no, no, no, no]).    % Нарвал    
-animal('Manatee', [yes, yes, no, no, no, no, no, no, no]).      % Ламантин    
-animal('Tasmanian Devil', [yes, no, yes, no, no, no, no, no, no]). % Тасманийский дьявол
-animal('Deer', [yes, no, no, no, no, no, no, no, no]).            % Олень
-animal('Frog', [no, yes, yes, no, no, no, no, yes, no]).          % Лягушка
-animal('Camel', [yes, no, no, no, no, no, no, no, no]).           % Верблюд
-animal('Cow', [yes, no, no, no, no, no, no, no, no]).            % Корова
-animal('Pig', [yes, no, no, no, no, no, no, no, no]).            % Свинья
-animal('Sheep', [yes, no, no, no, no, no, no, no, no]).          % Овца
-animal('Goat', [yes, no, no, no, no, no, no, no, no]).           % Коза
-animal('Chicken', [no, no, no, yes, no, no, no, no, no]).        % Курица
-animal('Duck', [no, no, no, yes, no, no, no, no, no]).          % Утка
-animal('Goose', [no, no, no, yes, no, no, no, no, no]).          % Гусь
-animal('Rabbit', [yes, no, no, no, no, no, no, no, no]).         % Кролик
-animal('Donkey', [yes, no, no, no, no, no, no, no, no]).         % Осёл
-animal('Meerkat', [yes, no, yes, no, no, yes, no, no, no]).      % Сурикат
-animal('Wombat', [yes, no, no, no, no, no, no, no, no]).        % Вомбат
-animal('Tapir', [yes, no, no, no, no, no, no, no, no]).          % Тапир
-animal('Marmot', [yes, no, no, no, no, no, no, no, no]).         % Сурок
-animal('Cat', [yes, no, yes, no, no, no, no, no, no]).           % Кошка
-animal('Dog', [yes, no, yes, no, no, no, no, no, no]).           % Собака
-animal('Ferret', [yes, no, yes, no, no, no, no, no, no]).        % Хорёк
-animal('Mouse', [yes, no, no, no, no, no, no, no, no]).          % Мышь
-animal('Rat', [yes, no, no, no, no, no, no, no, no]).            % Крыса
-animal('Hamster', [yes, no, no, no, no, no, no, no, no]).        % Хомяк
-animal('Guinea Pig', [yes, no, no, no, no, no, no, no, no]).     % Морская свинка
-animal('Chinchilla', [yes, no, no, no, no, no, no, no, no]).      % Шиншилла
-animal('Gerbil', [yes, no, no, no, no, no, no, no, no]).         % Песчанка
-animal('Skunk', [yes, no, yes, no, no, no, yes, no, no]).        % Скунс
-animal('Horse', [yes, no, no, no, no, no, no, no, no]).         % Лошадь
-animal('Mule', [yes, no, no, no, no, no, no, no, no]).          % Мул
-animal('Alpaca', [yes, no, no, no, no, no, no, no, no]).         % Альпака
-animal('Llama', [yes, no, no, no, no, no, no, no, no]).          % Лама
-animal('Yak', [yes, no, no, no, no, no, no, no, no]).           % Як
-animal('Sperm Whale', [yes, yes, yes, no, no, no, no, no, no]).   % Кашалот
-animal('Turtle', [no, yes, no, no, no, no, no, no, no]).         % Черепаха
-animal('Ray', [no, yes, yes, no, no, no, no, yes, no]).          % Скат
-animal('Seahorse', [no, yes, no, no, no, no, no, no, no]).       % Морской конёк
-animal('Otter', [yes, yes, yes, no, no, no, no, no, no]).        % Выдра
-animal('Beaver', [yes, yes, no, no, no, no, no, no, no]).        % Бобр
-animal('Pigeon', [no, no, no, yes, no, no, no, no, no]).         % Голубь
-animal('Swan', [no, no, no, yes, no, no, no, no, no]).           % Лебедь
-animal('Canary', [no, no, no, yes, no, no, no, no, yes]).        % Канарейка
-animal('Mole', [yes, no, no, no, no, no, no, no, no]).          % Крот
-animal('Squirrel', [yes, no, no, no, no, no, no, no, no]).       % Белка
-animal('Ant', [no, no, no, no, no, no, no, no, no]).             % Муравей
-animal('Bee', [no, no, no, yes, no, no, no, yes, no]).           % Пчела
-animal('Butterfly', [no, no, no, yes, no, no, no, no, no]).     % Бабочка
-animal('Scorpion', [no, no, yes, no, no, no, no, yes, no]).      % Скорпион
-animal('Tarantula', [no, no, yes, no, no, no, no, yes, no]).     % Тарантул
-animal('Ostrich', [no, no, no, no, no, no, no, no, no]).         % Страус
-animal('Penguin', [no, yes, yes, no, yes, no, no, no, no]).     % Пингвин
-animal('Hawk', [no, no, yes, yes, no, no, no, no, no]).          % Ястреб
-animal('Woodpecker', [no, no, no, yes, no, no, no, no, no]).     % Дятел
-animal('Crow', [no, no, yes, yes, no, no, no, no, no]).         % Ворона
-animal('Chameleon', [no, no, yes, no, no, no, no, no, no]).      % Хамелеон
-animal('Iguana', [no, no, no, no, no, no, no, no, no]).         % Игуана
-animal('Salamander', [no, yes, yes, no, no, no, no, yes, no]).   % Саламандра
-animal('Toad', [no, yes, yes, no, no, no, no, yes, no]).         % Жаба
-animal('Alligator', [no, yes, yes, no, no, no, no, no, no]).     % Аллигатор
-animal('Dingo', [yes, no, yes, no, no, no, no, no, no]).       % Динго
-animal('Wallaby', [yes, no, no, no, no, no, no, no, no]).      % Валлаби
-animal('Coyote', [yes, no, yes, no, no, no, no, no, no]).      % Койот
-animal('Wolverine', [yes, no, yes, no, no, no, no, no, no]).   % Росомаха
-animal('Badger', [yes, no, no, no, no, no, no, no, no]).          % Борсук
-animal('Anteater', [yes, no, no, no, no, no, no, no, no]).       % Муравьед
-animal('Firefly', [no, no, no, yes, no, no, no, no, no]).        % Светлячок
-animal('Stag Beetle', [no, no, no, yes, no, no, no, no, no]).    % Жук-олень
-animal('Gazelle', [yes, no, no, no, no, yes, no, no, no]).       % Газель
-animal('Capybara', [yes, no, no, no, no, no, no, no, no]).       % Капибара
-animal('Lynx', [yes, no, yes, no, no, no, no, no, no]).         % Рысь
-animal('Wildebeest', [yes, no, no, no, no, yes, no, no, no]).   % Гну
-animal('Ocelot', [yes, no, yes, no, no, no, no, no, no]).       % Оцелот
-animal('Red Panda', [yes, no, no, no, no, no, no, no, no]).     % Красная панда
-animal('Kea', [no, no, no, yes, no, no, no, no, yes]).          % Киа
-animal('Aardvark', [yes, no, no, no, no, no, no, no, no]).      % Землеройка
-animal('Binturong', [yes, no, no, no, no, no, no, no, no]).     % Бинтуронг
-animal('Hyena', [yes, no, yes, no, no, no, no, no, no]).         % Гиена
-animal('Shrimp', [no, yes, no, no, no, no, no, no, no]).          % Креветка
-animal('Stork', [yes, no, no, yes, no, no, no, no, no]).         % Аист
-animal('Kiwi', [yes, no, no, no, no, no, no, no, no]).           % Киви
-animal('Gecko', [yes, no, no, no, no, no, no, no, no]).          % Геккон
-animal('Crab', [no, yes, no, no, no, no, no, no, no]).           % Краб
-animal('Lobster', [no, yes, no, no, no, no, no, no, no]).        % Омар
-animal('Cockroach', [no, no, yes, no, no, no, no, no, no]).      % Таракан
-animal('Sable', [yes, no, yes, no, no, no, no, no, no]).        % Соболь
-animal('Marten', [yes, no, yes, no, no, no, no, no, no]).       % Куница
-animal('Termite', [no, yes, no, no, no, no, no, no, no]).       % Термит
-animal('Echidna', [yes, no, no, no, no, no, no, no, no]).        % Ехидна
-animal('Buffalo', [yes, no, no, no, no, yes, no, no, no]).         % Буйвол
-animal('Mongoose', [yes, no, yes, no, no, no, no, no, no]).        % Мангуста
-animal('Bison', [yes, no, no, no, no, yes, no, no, no]).            % Зубр
-animal('Arctic Fox', [yes, no, yes, no, yes, no, no, no, no]).     % Песец
-animal('Stoat', [yes, no, yes, no, no, no, no, no, no]).           % Горностай
-animal('Mandrill', [yes, no, yes, no, no, no, no, no, no]).        % Мандрил
-animal('Dugong', [yes, yes, no, no, no, no, no, no, no]).          % Дюгонь
-animal('Turkey', [yes, no, no, yes, no, no, no, no, no]).         % Индюк
-animal('Wild Boar', [yes, no, yes, no, no, no, no, no, no]).      % Кабан
-animal('Crane', [yes, no, no, yes, no, no, no, no, no]).          % Журавль
-animal('Heron', [yes, no, no, yes, no, no, no, no, no]).          % Цапля
-animal('Pelican', [no, yes, no, yes, no, no, no, no, no]).        % Пеликан
-animal('Hare', [yes, no, no, no, no, no, no, no, no]).            % Заяц
-animal('Whale', [yes, yes, no, no, no, no, no, no, no]).          % Кит
-animal('Jaguar', [yes, no, yes, no, no, no, no, no, no]).         % Ягуар
-animal('Sparrow', [no, no, no, yes, no, no, no, no, no]).         % Воробей
-animal('Python', [yes, no, yes, no, no, no, no, no, no]).         % Питон
-animal('Triton', [no, yes, no, no, no, no, no, yes, no]).         % Тритон
-animal('Moray Eel', [no, yes, yes, no, no, no, no, no, no]).      % Мурена
+animal('African Fish Eagle', [no, no, yes, yes, no, yes, no, no, no]).
+animal('Angelfish', [no, yes, no, no, no, yes, yes, no, no]).
+animal('Ant', [no, no, yes, no, no, yes, no, yes, yes]).
+animal('Arctic Cod', [no, yes, yes, no, yes, no, no, no, no]).
+animal('Arctic Skua', [no, no, yes, yes, yes, no, yes, no, no]).
+animal('Arctic Tern', [no, no, yes, yes, yes, no, no, no, no]).
+animal('Banded Mongoose', [yes, no, yes, no, no, no, yes, no, no]).
+animal('Barracuda', [no, yes, yes, no, no, yes, yes, no, no]).
+animal('Bat-Eared Fox', [yes, no, yes, yes, no, yes, no, no, yes]).
+animal('Bear', [yes, no, yes, no, no, no, no, no, no]).
+animal('Beluga Whale', [yes, yes, yes, no, yes, no, no, no, no]).
+animal('Black Mamba', [no, no, yes, no, no, yes, no, yes, no]).
+animal('Blue-Ringed Octopus', [no, yes, yes, no, no, no, no, yes, yes]).
+animal('Bowhead Whale', [yes, yes, no, no, yes, no, no, no, no]).
+animal('Box Jellyfish', [no, yes, yes, no, no, yes, no, yes, no]).
+animal('Brazilian Wandering Spider', [no, no, yes, no, no, no, yes, yes, no]).
+animal('Cancer', [no, yes, yes, no, yes, yes, no, no, yes]).
+animal('Cape Buffalo', [yes, no, no, no, yes, yes, yes, no, no]).
+animal('Cape Cobra', [no, no, yes, no, no, yes, yes, yes, yes]).
+animal('Capelin', [no, yes, yes, no, yes, no, no, no, yes]).
+animal('Caracal', [yes, no, yes, no, no, yes, yes, yes, no]).
+animal('Cheetah', [yes, no, yes, no, no, yes, no, no, no]).
+animal('Clownfish', [no, yes, no, no, no, no, yes, no, yes]).
+animal('Coral Snake', [no, no, yes, no, no, no, yes, yes, yes]).
+animal('Cow', [yes, no, no, no, no, no, no, no, no]).
+animal('Crane', [no, yes, no, yes, no, yes, no, no, no]).
+animal('Crocodile', [no, no, yes, no, no, yes, no, no, no]).
+animal('Dog', [yes, no, yes, no, no, no, no, no, yes]).
+animal('Dolphin', [yes, yes, yes, no, no, yes, no, no, no]).
+animal('Duck', [no, no, no, yes, no, no, no, no, no]).
+animal('Eagle', [no, no, yes, yes, no, no, no, no, no]).
+animal('Emu', [no, no, no, no, no, no, no, no, yes]).
+animal('Fennec Fox', [yes, no, yes, no, yes, yes, no, no, yes]).
+animal('Firefly', [no, no, no, yes, yes, yes, no, no, no]).
+animal('Fisher', [no, no, yes, no, yes, no, yes, yes, no]).
+animal('Flamingo', [no, yes, no, yes, no, yes, no, no, yes]).
+animal('Frog', [no, yes, yes, no, no, yes, no, yes, no]).
+animal('Gaboon Viper', [no, no, yes, no, yes, yes, no, yes, yes]).
+animal('Gila Monster', [no, no, yes, no, no, no, no, yes, no]).
+animal('Giraffe', [yes, no, no, no, no, yes, yes, no, yes]).
+animal('Greenland Shark', [no, yes, yes, no, yes, no, yes, no, no]).
+animal('Gyrfalcon', [no, no, yes, yes, yes, no, yes, no, yes]).
+animal('Hare', [yes, no, no, no, yes, no, no, no, yes]).
+animal('Hawk', [no, no, yes, yes, no, yes, yes, no, no]).
+animal('Hawk Moth', [no, no, no, yes, no, no, no, no, yes]).
+animal('Honey Badger', [yes, no, no, no, yes, yes, yes, yes, yes]).
+animal('Hooded Seal', [yes, no, yes, no, yes, no, no, yes, no]).
+animal('Horned Viper', [no, no, no, yes, no, yes, no, yes, yes]).
+animal('Hornet', [no, no, yes, yes, no, no, yes, yes, no]).
+animal('Horse', [yes, no, no, no, yes, yes, no, no, no]).
+animal('Humpback Whale', [yes, yes, no, no, yes, yes, yes, no, no]).
+animal('Hyena', [yes, no, yes, no, no, yes, yes, no, no]).
+animal('Impala', [yes, no, no, no, yes, yes, yes, no, yes]).
+animal('Inland Taipan', [no, no, yes, no, no, no, no, yes, yes]).
+animal('Ivory Gull', [no, no, no, yes, yes, no, yes, yes, no]).
+animal('Jackal', [yes, no, yes, no, yes, yes, no, no, no]).
+animal('Jaeger', [no, no, yes, yes, yes, no, no, yes, no]).
+animal('Jellyfish', [no, yes, no, no, yes, yes, no, yes, no]).
+animal('Kea', [no, no, yes, yes, no, no, no, no, yes]).
+animal('King Cobra', [no, no, no, no, no, yes, no, yes, yes]).
+animal('Kittiwake', [no, no, no, yes, yes, no, yes, yes, yes]).
+animal('Komodo Dragon', [no, no, yes, no, no, no, no, no, yes]).
+animal('Krill', [no, yes, no, no, yes, no, no, yes, no]).
+animal('Leopard', [yes, no, yes, no, no, yes, yes, yes, yes]).
+animal('Lilac-Breasted Roller', [no, no, no, yes, no, yes, yes, no, yes]).
+animal('Lion', [yes, no, yes, no, no, yes, no, no, yes]).
+animal('Lionfish', [no, yes, no, no, no, no, no, yes, yes]).
+animal('Lynx', [yes, no, yes, no, yes, no, yes, no, no]).
+animal('Macaw', [no, no, no, yes, no, no, yes, no, yes]).
+animal('Manta Ray', [no, yes, no, no, no, no, yes, no, no]).
+animal('Marabou Stork', [no, no, no, yes, no, yes, yes, no, no]).
+animal('Merlin', [no, no, yes, yes, yes, no, yes, yes, yes]).
+animal('Mink', [yes, no, yes, no, yes, no, yes, yes, yes]).
+animal('Mojave Rattlesnake', [no, no, yes, yes, yes, yes, no, yes, no]).
+animal('Monarch Butterfly', [no, no, no, no, no, no, yes, yes, yes]).
+animal('Monitor Lizard', [no, no, yes, no, no, no, yes, no, no]).
+animal('Monkey', [yes, no, no, no, no, yes, no, no, yes]).
+animal('Moray Eel', [no, yes, no, no, no, yes, no, no, no]).
+animal('Narwhal', [yes, no, no, no, yes, no, no, no, no]).
+animal('Okapi', [yes, no, no, no, no, no, yes, no, yes]).
+animal('Osprey', [no, no, yes, yes, yes, yes, no, no, no]).
+animal('Painted Stork', [no, no, yes, yes, yes, yes, yes, no, no]).
+animal('Parrot', [no, no, no, yes, no, no, yes, yes, yes]).
+animal('Parrotfish', [no, yes, no, no, no, yes, no, no, yes]).
+animal('Peregrine Falcon', [no, no, no, yes, yes, no, no, yes, yes]).
+animal('Pigeon', [no, no, no, yes, yes, yes, no, no, no]).
+animal('Polar Bear', [yes, no, no, no, yes, no, yes, yes, no]).
+animal('Pomarine Jaeger', [no, no, yes, yes, yes, no, no, yes, yes]).
+animal('Puff Adder', [no, no, no, no, yes, yes, no, yes, yes]).
+animal('Pufferfish', [no, yes, no, no, no, no, yes, yes, yes]).
+animal('Quetzal', [no, no, no, yes, no, no, yes, no, no]).
+animal('Rat', [yes, no, no, no, yes, yes, no, no, yes]).
+animal('Rattlesnake', [no, no, no, yes, yes, yes, no, yes, no]).
+animal('Raven', [no, no, yes, yes, no, no, yes, no, yes]).
+animal('Red Wolf', [yes, no, yes, no, yes, no, no, no, yes]).
+animal('Red kangaroo', [yes, no, no, no, no, no, no, no, yes]).
+animal('Red-Bellied Snake', [no, no, no, no, no, yes, yes, yes, yes]).
+animal('Red-Billed Oxpecker', [no, no, no, yes, yes, yes, no, no, yes]).
+animal('Red-Throated Loon', [no, no, yes, yes, yes, no, no, no, yes]).
+animal('Redback Spider', [no, no, no, no, no, no, no, yes, yes]).
+animal('Rhinoceros', [yes, no, no, no, no, yes, no, no, no]).
+animal('Ringed Seal', [yes, no, no, no, yes, no, yes, yes, yes]).
+animal('Rinkhals', [no, no, yes, no, yes, yes, no, yes, no]).
+animal('Ross', [no, no, no, yes, yes, no, no, no, yes]).
+animal('Saddle-Billed Stork', [no, no, yes, yes, no, yes, yes, no, yes]).
+animal('Saw-Scaled Viper', [no, no, yes, yes, no, yes, no, yes, yes]).
+animal('Scorpion', [no, no, yes, no, no, yes, no, yes, yes]).
+animal('Scorpionfish', [no, yes, no, no, no, yes, yes, yes, no]).
+animal('Sea Anemone', [no, yes, no, no, no, no, no, yes, no]).
+animal('Sea Snake', [no, yes, no, no, no, yes, no, yes, yes]).
+animal('Shark', [no, yes, yes, no, yes, yes, no, no, no]).
+animal('Snow Bunting', [no, no, no, yes, yes, no, yes, no, yes]).
+animal('Snow Goose', [no, no, no, yes, yes, no, no, no, no]).
+animal('Snowy Egret', [no, no, yes, yes, yes, no, yes, yes, no]).
+animal('Snowy Owl', [no, no, no, no, yes, no, no, yes, yes]).
+animal('Spotted Hyena', [yes, no, yes, no, yes, yes, yes, no, yes]).
+animal('Springbok', [yes, no, no, yes, yes, yes, yes, no, yes]).
+animal('Stonefish', [no, yes, no, no, no, no, yes, yes, no]).
+animal('Suricate', [yes, no, no, yes, yes, yes, yes, yes, yes]).
+animal('Tarantula', [no, no, no, no, no, no, no, yes, no]).
+animal('Tiger', [yes, no, yes, no, no, yes, yes, no, yes]).
+animal('Tiger Beetle', [no, no, no, no, no, no, yes, yes, no]).
+animal('Tiger Snake', [no, no, yes, no, no, no, yes, no, yes]).
+animal('Toucan', [no, no, no, yes, no, yes, no, no, no]).
+animal('Triggerfish', [no, yes, no, no, no, yes, yes, no, yes]).
+animal('Turtle', [no, yes, yes, no, no, yes, no, no, no]).
+animal('Verreaux', [no, no, yes, yes, no, yes, no, no, yes]).
+animal('Vulture', [no, no, yes, yes, no, no, yes, no, no]).
+animal('Wandering Spider', [no, no, no, yes, no, no, no, yes, no]).
+animal('Wasp', [no, no, yes, yes, no, no, yes, yes, yes]).
+animal('White-Backed Vulture', [no, no, yes, yes, yes, yes, no, no, yes]).
+animal('Wildebeest', [yes, no, no, yes, yes, yes, yes, no, no]).
+animal('Wolf', [yes, no, yes, no, yes, no, no, no, no]).
+animal('Wolverine', [yes, no, yes, no, yes, no, no, yes, yes]).
+animal('Yellow-Billed Stork', [no, no, yes, yes, yes, yes, yes, yes, no]).
+animal('Zebra', [yes, no, no, no, no, yes, yes, no, no]).
+animal('Zorilla', [yes, no, no, no, yes, yes, yes, yes, no]).
 
 % Основной цикл игры
 play :-
@@ -172,15 +158,18 @@ play :-
 
 % Задавание вопросов
 ask_questions(Answers) :-
-    length(Answers, NumAnswers),
-    (   NumAnswers >= 9 ->  % Достигнут последний вопрос
+    length(Answers, _NumAnswers),
+    findall(QID, (question(QID, _, _), \+ member(answer(QID, _), Answers)), QIDs),
+    (   QIDs = [] ->  % Если вопросов больше нет
         learn_new_animal(Answers)
-    ;   incorrect_guess ->  % Если уже было неверное предположение
+    ;   incorrect_guess ->  % Если было неверное предположение
         select_next_question(Answers, QuestionID, QuestionText),
         ask_question(QuestionID, QuestionText, Answers)
     ;   findall(Animal, matches(Animal, Answers), Candidates),
         (   Candidates = [Animal] ->  % Если остался один кандидат
             make_guess(Animal, Answers)
+        ;   Candidates = [] ->  % Если кандидатов нет
+            learn_new_animal(Answers)
         ;   select_next_question(Answers, QuestionID, QuestionText),
             ask_question(QuestionID, QuestionText, Answers)
         )
@@ -222,8 +211,7 @@ make_guess(Animal, Answers) :-
         write('Отлично! Я угадал!'), nl
     ;   Confirm = no ->
         assertz(incorrect_guess),  % Отмечаем, что было неверное предположение
-        select_next_question(Answers, QuestionID, QuestionText),
-        ask_question(QuestionID, QuestionText, Answers)
+        ask_questions(Answers)
     ;   write('Пожалуйста, введите yes или no.'), nl,
         make_guess(Animal, Answers)
     ).
@@ -293,32 +281,57 @@ get_max_question_id(MaxID) :-
     (IDs = [] -> MaxID = 0; max_list(IDs, MaxID)).
 
 save_animal(NewAnimal, Features) :-
-    open('akinator.pl', append, Stream),
-    write(Stream, 'animal('),
-    writeq(Stream, NewAnimal),
-    write(Stream, ', '),
-    writeq(Stream, Features),
-    write(Stream, ').\n'),
-    close(Stream).
+    catch(
+        (   open('akinator.pl', append, Stream),
+            write(Stream, 'animal(\''),
+            writeq(Stream, NewAnimal),
+            write(Stream, '\', '),
+            writeq(Stream, Features),
+            write(Stream, ').\n'),
+            close(Stream),
+            write('Животное '), write(NewAnimal), write(' успешно сохранено.'), nl
+        ),
+        Error,
+        (   write('Ошибка при сохранении животного: '), write(Error), nl,
+            fail
+        )
+    ).
 
 save_question(QID, QuestionText) :-
-    open('akinator.pl', append, Stream),
-    write(Stream, 'question('),
-    write(Stream, QID),
-    write(Stream, ', '),
-    writeq(Stream, QuestionText),
-    write(Stream, ', [yes, no]).\n'),
-    close(Stream).
+    catch(
+        (   open('akinator.pl', append, Stream),
+            write(Stream, 'question('),
+            write(Stream, QID),
+            write(Stream, ', '),
+            writeq(Stream, QuestionText),
+            write(Stream, ', [yes, no]).\n'),
+            close(Stream),
+            write('Вопрос '), write(QID), write(' успешно сохранен.'), nl
+        ),
+        Error,
+        (   write('Ошибка при сохранении вопроса: '), write(Error), nl,
+            fail
+        )
+    ).
 
 save_characteristic(QID, Animal, Answer) :-
-    open('akinator.pl', append, Stream),
-    write(Stream, 'characteristic('),
-    write(Stream, QID),
-    write(Stream, ', '),
-    writeq(Stream, Animal),
-    write(Stream, ', '),
-    write(Stream, Answer),
-    write(Stream, ').\n'),
-    close(Stream).
+    catch(
+        (   open('akinator.pl', append, Stream),
+            write(Stream, 'characteristic('),
+            write(Stream, QID),
+            write(Stream, ', '),
+            writeq(Stream, Animal),
+            write(Stream, ', '),
+            write(Stream, Answer),
+            write(Stream, ').\n'),
+            close(Stream),
+            write('Характеристика для '), write(Animal), write(' успешно сохранена.'), nl
+        ),
+        Error,
+        (   write('Ошибка при сохранении характеристики: '), write(Error), nl,
+            fail
+        )
+    ).
+    
+animal('medusa', [no,yes,yes,no,no,no,no,yes,no]).
 
-animal('Dolphin', [yes,yes,yes,no,no,no,no,no,no]).

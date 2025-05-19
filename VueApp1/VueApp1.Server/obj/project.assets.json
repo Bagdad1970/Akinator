@@ -5688,11 +5688,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Василий Осипов\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\AkinatorBackend.csproj",
+      "projectUniqueName": "C:\\Users\\Василий Осипов\\Desktop\\Ak\\VueApp1\\VueApp1.Server\\AkinatorBackend.csproj",
       "projectName": "AkinatorBackend",
-      "projectPath": "C:\\Users\\Василий Осипов\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\AkinatorBackend.csproj",
+      "projectPath": "C:\\Users\\Василий Осипов\\Desktop\\Ak\\VueApp1\\VueApp1.Server\\AkinatorBackend.csproj",
       "packagesPath": "C:\\Users\\Василий Осипов\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Василий Осипов\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\obj\\",
+      "outputPath": "C:\\Users\\Василий Осипов\\Desktop\\Ak\\VueApp1\\VueApp1.Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -3,6 +3,7 @@ using System;
 using Akinator.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace AkinatorBackend.Migrations
 {
     [DbContext(typeof(AppDBContext))]
-    partial class AppDBContextModelSnapshot : ModelSnapshot
+    [Migration("20250517211543_Migr015")]
+    partial class Migr015
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,95 +24,6 @@ namespace AkinatorBackend.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
-
-            modelBuilder.Entity("Akinator.Models.Entities.Animals", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("user_Id")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Animals");
-                });
-
-            modelBuilder.Entity("Akinator.Models.Entities.AuthLog", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Action")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Username")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("AuthLogs");
-                });
-
-            modelBuilder.Entity("Akinator.Models.Entities.GameStatistics", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("AddedAnimal")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Answers")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("GuessedAnimal")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<DateTime?>("SessionEnd")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<DateTime>("SessionStart")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<int>("TotalQuestionsAsked")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("integer");
-
-                    b.Property<bool?>("WasCorrectGuess")
-                        .HasColumnType("boolean");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("GameStatistics");
-                });
 
             modelBuilder.Entity("Akinator.Models.Entities.Question", b =>
                 {
@@ -135,6 +49,27 @@ namespace AkinatorBackend.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Questions");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            NoNextQuestionId = 3,
+                            Text = "Is your character real?",
+                            YesNextQuestionId = 2
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Guess = "Historical Figure",
+                            Text = "Is your character a historical figure?"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Guess = "Fictional Character",
+                            Text = "Is your character from a movie?"
+                        });
                 });
 
             modelBuilder.Entity("Akinator.Models.Entities.Users", b =>

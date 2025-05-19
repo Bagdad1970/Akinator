@@ -22,7 +22,9 @@ public class AuthController : ControllerBase
             return BadRequest(ModelState);
 
         var result = await _authService.RegisterAsync(dto);
-        return result.Success ? Ok(new { result.Message }) : BadRequest(new { result.Message });
+        return result.Success
+            ? Ok(new { result.Message, result.Username, result.userId })
+            : BadRequest(new { result.Message });
     }
 
     [HttpPost("login")]
@@ -32,13 +34,15 @@ public class AuthController : ControllerBase
             return BadRequest(ModelState);
 
         var result = await _authService.LoginAsync(dto);
-        return result.Success ? Ok(new { result.Message }) : Unauthorized(new { result.Message });
+        return result.Success
+            ? Ok(new { result.Message, result.Username, result.userId, result.email })
+            : Unauthorized(new { result.Message });
     }
 
     [HttpPost("logout")]
-    public async Task<IActionResult> Logout()
+    public async Task<IActionResult> Logout([FromBody] LogoutDto dto)
     {
-        await _authService.LogoutAsync();
+        await _authService.LogoutAsync(dto.Username, dto.Email);
         return Ok(new { Message = "Logged out successfully" });
     }
 }

@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "L9/sqQeaEuEu7TelZVcauhd91pn/F70RxJ5uOw400tI=",
+  "Hash": "2gV93jst9dZR5bkRmp9NYinNnrdXiV73Fa3mVzuZ7hA=",
   "Source": "AkinatorBackend",
   "BasePath": "_content/AkinatorBackend",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\Василий Осипов\\Desktop\\Ak\\VueApp1\\vueapp1.client\\AkinatorFrontend.esproj",
+      "Version": 2,
+      "Source": "AkinatorFrontend",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [],
   "Assets": [
     {

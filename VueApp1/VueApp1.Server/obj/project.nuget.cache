@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YfwhTEEwKjA=",
+  "dgSpecHash": "i+h3i1mXWrE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Василий Осипов\\source\\repos\\AkinatorFinal\\Akinator\\VueApp1\\VueApp1.Server\\AkinatorBackend.csproj",
+  "projectFilePath": "C:\\Users\\Василий Осипов\\Desktop\\Ak\\VueApp1\\VueApp1.Server\\AkinatorBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Василий Осипов\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Василий Осипов\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

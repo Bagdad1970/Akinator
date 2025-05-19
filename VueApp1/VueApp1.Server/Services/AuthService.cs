@@ -1,7 +1,6 @@
 using Akinator.Database;
 using Akinator.Models.Entities;
 using Akinator.Models.Responses;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
 using System.Text;
@@ -10,55 +9,75 @@ namespace Akinator.Services;
 
 public class AuthService
 {
-    private readonly AppDBContext _dbContext; // Ваш DbContext
+    private readonly AppDBContext _dbContext;
 
     public AuthService(AppDBContext dbContext)
     {
         _dbContext = dbContext;
     }
 
-    public async Task<(bool Success, string Message)> RegisterAsync(RegisterDto request)
+    public async Task<(bool Success, string Message, string Username, int userId, string email)> RegisterAsync(RegisterDto request)
     {
-        // Проверка, что пользователь с таким email уже не существует
         if (await _dbContext.Users.AnyAsync(u => u.Email == request.Email))
-            return (false, "Email already exists");
+            return (false, "Email already exists", "Error", 0, "");
 
-        // Хэширование пароля (упрощенный вариант, лучше использовать PBKDF2 или BCrypt)
         var hashedPassword = HashPassword(request.Password);
 
-        // Создание пользователя
         var user = new Users
         {
             Login = request.Username,
             Email = request.Email,
-            Password = hashedPassword // Сохраняем хэш, а не plain text!
+            Password = hashedPassword
         };
 
-        // Добавление в БД
         await _dbContext.Users.AddAsync(user);
         await _dbContext.SaveChangesAsync();
 
-        return (true, "User created successfully");
+        // Сохранение лога регистрации
+        await LogAuthAction("Register", request.Username, request.Email);
+
+        return (true, "User created successfully", user.Login, user.Id, user.Email);
     }
 
-    public async Task<(bool Success, string Message)> LoginAsync(LoginDto request)
+    public async Task<(bool Success, string Message, string Username, int userId, string email)> LoginAsync(LoginDto request)
     {
-        // Поиск пользователя по email
         var user = await _dbContext.Users
             .FirstOrDefaultAsync(u => u.Email == request.Email);
 
         if (user == null)
-            return (false, "Invalid email or password");
+            return (false, "Invalid email or password", "Error", 0, "");
 
-        // Проверка пароля
         var isPasswordValid = VerifyPassword(request.Password, user.Password);
 
-        return isPasswordValid
-            ? (true, "Logged in successfully")
-            : (false, "Invalid email or password");
+        if (isPasswordValid)
+        {
+            // Сохранение лога входа
+            await LogAuthAction("Login", user.Login, user.Email);
+            return (true, "Logged in successfully", user.Login, user.Id, user.Email);
+        }
+
+        return (false, "Invalid email or password", "Error", 0, "");
     }
 
-    // Упрощенный метод хэширования (в реальном проекте используйте библиотеки!)
+    public async Task LogoutAsync(string username, string email)
+    {
+        await LogAuthAction("Logout", username, email);
+    }
+
+    private async Task LogAuthAction(string action, string username, string email)
+    {
+        var log = new AuthLog
+        {
+            Action = action,
+            Username = username,
+            Email = email,
+            CreatedAt = DateTime.UtcNow
+        };
+
+        await _dbContext.AuthLogs.AddAsync(log);
+        await _dbContext.SaveChangesAsync();
+    }
+
     private string HashPassword(string password)
     {
         using var sha256 = SHA256.Create();
@@ -71,9 +90,5 @@ public class AuthService
     {
         var inputHash = HashPassword(inputPassword);
         return inputHash == storedHash;
-    }
-    public async Task LogoutAsync()
-    {
-        await Task.CompletedTask;
     }
 }

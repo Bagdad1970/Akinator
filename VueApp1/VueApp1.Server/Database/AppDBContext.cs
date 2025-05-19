@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Akinator.Models.Entities;
+using System.Reflection.Emit;
 
 namespace Akinator.Database;
 
@@ -13,15 +14,14 @@ public class AppDBContext : IdentityDbContext<IdentityUser, IdentityRole, string
 
     public DbSet<Users> Users { get; set; }
 
+    public DbSet<Animals> Animals { get; set; }
+
+    public DbSet<AuthLog> AuthLogs { get; set; }
+
+    public DbSet<GameStatistics> GameStatistics { get; set; }
+
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
-
-        // ???????????? ????????
-        builder.Entity<Question>().HasData(
-            new Question { Id = 1, Text = "Is your character real?", YesNextQuestionId = 2, NoNextQuestionId = 3 },
-            new Question { Id = 2, Text = "Is your character a historical figure?", Guess = "Historical Figure" },
-            new Question { Id = 3, Text = "Is your character from a movie?", Guess = "Fictional Character" }
-        );
     }
 }

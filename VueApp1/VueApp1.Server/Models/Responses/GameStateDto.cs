@@ -7,4 +7,6 @@ public class GameStateDto
     public string Guess { get; set; }
     public bool IsCorrect { get; set; }
     public bool AwaitingAnimalName { get; set; }
+    public bool AwaitingNewQuestion { get; set; }
+    public bool AwaitingNewQuestionAnswer { get; set; }
 }

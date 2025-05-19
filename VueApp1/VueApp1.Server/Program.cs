@@ -1,13 +1,15 @@
 ﻿using Akinator.Database;
 using Akinator.Services;
 using Akinator.Models.Requests;
-
+using System.Text.Json;
+using Microsoft.AspNetCore.Mvc; 
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using System.Diagnostics;
 using System.Text;
+using Akinator.Models.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -39,6 +41,7 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>()
 // Services
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<GameService>();
+builder.Services.AddScoped<GameStatisticsService>();
 
 // Register Prolog service as singleton (maintains single process)
 builder.Services.AddSingleton<PrologService>();
@@ -118,10 +121,61 @@ app.MapPost("/answer", async (AnswerRequest request) =>
     }
 });
 
-app.MapPost("/end", () =>
+app.MapPost("/end", async (
+    [FromBody] GameStatistics stats,
+    [FromServices] AppDBContext dbContext) =>
 {
-    prolog.EndSession();
-    return Results.Ok("Session ended");
+    // Проверка входных данных
+    if (stats == null)
+    {
+        Console.WriteLine("Ошибка: stats равен null");
+        return Results.BadRequest("Входные данные отсутствуют");
+    }
+
+    Console.WriteLine($"Получены данные: {System.Text.Json.JsonSerializer.Serialize(stats)}");
+
+    try
+    {
+        // Проверка, что dbContext инициализирован
+        if (dbContext == null)
+        {
+            Console.WriteLine("Ошибка: dbContext равен null");
+            return Results.Problem("Контекст базы данных не инициализирован");
+        }
+
+        var gameStatistics = new GameStatistics
+        {
+            UserId = stats.UserId,
+            SessionStart = stats.SessionStart,
+            SessionEnd = stats.SessionEnd ?? DateTime.UtcNow,
+            TotalQuestionsAsked = stats.TotalQuestionsAsked,
+            Answers = stats.Answers ?? "[]",
+            GuessedAnimal = stats.GuessedAnimal,
+            AddedAnimal = stats.AddedAnimal,
+            WasCorrectGuess = stats.WasCorrectGuess
+        };
+
+        await dbContext.GameStatistics.AddAsync(gameStatistics);
+        await dbContext.SaveChangesAsync();
+
+        // Проверка prolog (если он нужен)
+        try
+        {
+            prolog?.EndSession(); // Используем ?. для безопасного вызова, если prolog может быть null
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Ошибка в prolog.EndSession: {ex.Message}");
+            // Игнорируем ошибку prolog, если она не критична
+        }
+
+        return Results.Ok("Статистика игры успешно сохранена");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Ошибка сохранения: {ex.Message}, Inner: {ex.InnerException?.Message}");
+        return Results.Problem("Не удалось сохранить статистику игры");
+    }
 });
 
 app.MapControllers();
