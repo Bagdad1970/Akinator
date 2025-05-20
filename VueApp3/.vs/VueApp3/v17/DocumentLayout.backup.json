@@ -1,34 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\VueApp3\\",
+  "WorkspaceRootPath": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\Desktop\\Aboba\\Akinator\\VueApp3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9D72B76-6325-3536-01E7-B636EB4B3C07}|vueapp3.client\\vueapp3.client.esproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\vueapp3\\vueapp3.client\\src\\app.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C9D72B76-6325-3536-01E7-B636EB4B3C07}|vueapp3.client\\vueapp3.client.esproj|solutionrelative:vueapp3.client\\src\\app.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1331E3E4-6C1E-43E6-8A1C-7EE40BE58D0E}|VueApp3.Server\\VueApp3.Server.csproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\vueapp3\\vueapp3.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1331E3E4-6C1E-43E6-8A1C-7EE40BE58D0E}|VueApp3.Server\\VueApp3.Server.csproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\desktop\\aboba\\akinator\\vueapp3\\vueapp3.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1331E3E4-6C1E-43E6-8A1C-7EE40BE58D0E}|VueApp3.Server\\VueApp3.Server.csproj|solutionrelative:vueapp3.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9D72B76-6325-3536-01E7-B636EB4B3C07}|vueapp3.client\\vueapp3.client.esproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\vueapp3\\vueapp3.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C9D72B76-6325-3536-01E7-B636EB4B3C07}|vueapp3.client\\vueapp3.client.esproj|solutionrelative:vueapp3.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1331E3E4-6C1E-43E6-8A1C-7EE40BE58D0E}|VueApp3.Server\\VueApp3.Server.csproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\vueapp3\\vueapp3.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{1331E3E4-6C1E-43E6-8A1C-7EE40BE58D0E}|VueApp3.Server\\VueApp3.Server.csproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\desktop\\aboba\\akinator\\vueapp3\\vueapp3.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1331E3E4-6C1E-43E6-8A1C-7EE40BE58D0E}|VueApp3.Server\\VueApp3.Server.csproj|solutionrelative:vueapp3.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1331E3E4-6C1E-43E6-8A1C-7EE40BE58D0E}|VueApp3.Server\\VueApp3.Server.csproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\vueapp3\\vueapp3.server\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1331E3E4-6C1E-43E6-8A1C-7EE40BE58D0E}|VueApp3.Server\\VueApp3.Server.csproj|solutionrelative:vueapp3.server\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1331E3E4-6C1E-43E6-8A1C-7EE40BE58D0E}|VueApp3.Server\\VueApp3.Server.csproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\desktop\\aboba\\akinator\\vueapp3\\vueapp3.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1331E3E4-6C1E-43E6-8A1C-7EE40BE58D0E}|VueApp3.Server\\VueApp3.Server.csproj|solutionrelative:vueapp3.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1331E3E4-6C1E-43E6-8A1C-7EE40BE58D0E}|VueApp3.Server\\VueApp3.Server.csproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\vueapp3\\vueapp3.server\\vueapp3.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{1331E3E4-6C1E-43E6-8A1C-7EE40BE58D0E}|VueApp3.Server\\VueApp3.Server.csproj|solutionrelative:vueapp3.server\\vueapp3.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{C9D72B76-6325-3536-01E7-B636EB4B3C07}|vueapp3.client\\vueapp3.client.esproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\desktop\\aboba\\akinator\\vueapp3\\vueapp3.client\\eslint.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C9D72B76-6325-3536-01E7-B636EB4B3C07}|vueapp3.client\\vueapp3.client.esproj|solutionrelative:vueapp3.client\\eslint.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9D72B76-6325-3536-01E7-B636EB4B3C07}|vueapp3.client\\vueapp3.client.esproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\vueapp3\\vueapp3.client\\jsconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C9D72B76-6325-3536-01E7-B636EB4B3C07}|vueapp3.client\\vueapp3.client.esproj|solutionrelative:vueapp3.client\\jsconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{C9D72B76-6325-3536-01E7-B636EB4B3C07}|vueapp3.client\\vueapp3.client.esproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\desktop\\aboba\\akinator\\vueapp3\\vueapp3.client\\src\\app.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C9D72B76-6325-3536-01E7-B636EB4B3C07}|vueapp3.client\\vueapp3.client.esproj|solutionrelative:vueapp3.client\\src\\app.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9D72B76-6325-3536-01E7-B636EB4B3C07}|vueapp3.client\\vueapp3.client.esproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\desktop\\aboba\\akinator\\vueapp3\\vueapp3.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C9D72B76-6325-3536-01E7-B636EB4B3C07}|vueapp3.client\\vueapp3.client.esproj|solutionrelative:vueapp3.client\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9D72B76-6325-3536-01E7-B636EB4B3C07}|vueapp3.client\\vueapp3.client.esproj|c:\\users\\\u0432\u0430\u0441\u0438\u043B\u0438\u0439 \u043E\u0441\u0438\u043F\u043E\u0432\\desktop\\aboba\\akinator\\vueapp3\\vueapp3.client\\.vscode\\launch.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C9D72B76-6325-3536-01E7-B636EB4B3C07}|vueapp3.client\\vueapp3.client.esproj|solutionrelative:vueapp3.client\\.vscode\\launch.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,86 +46,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\Desktop\\Aboba\\Akinator\\VueApp3\\VueApp3.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "VueApp3.Server\\appsettings.json",
+              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\Desktop\\Aboba\\Akinator\\VueApp3\\VueApp3.Server\\appsettings.json",
+              "RelativeToolTip": "VueApp3.Server\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-20T13:27:46.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "eslint.config.js",
+              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\Desktop\\Aboba\\Akinator\\VueApp3\\vueapp3.client\\eslint.config.js",
+              "RelativeDocumentMoniker": "vueapp3.client\\eslint.config.js",
+              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\Desktop\\Aboba\\Akinator\\VueApp3\\vueapp3.client\\eslint.config.js",
+              "RelativeToolTip": "vueapp3.client\\eslint.config.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-20T13:27:27.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "App.vue",
-              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\VueApp3\\vueapp3.client\\src\\App.vue",
+              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\Desktop\\Aboba\\Akinator\\VueApp3\\vueapp3.client\\src\\App.vue",
               "RelativeDocumentMoniker": "vueapp3.client\\src\\App.vue",
-              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\VueApp3\\vueapp3.client\\src\\App.vue",
+              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\Desktop\\Aboba\\Akinator\\VueApp3\\vueapp3.client\\src\\App.vue",
               "RelativeToolTip": "vueapp3.client\\src\\App.vue",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAAAJ8AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAAAKAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-05-19T20:42:09.373Z",
+              "WhenOpened": "2025-05-20T13:27:15.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\Desktop\\Aboba\\Akinator\\VueApp3\\VueApp3.Server\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "VueApp3.Server\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\Desktop\\Aboba\\Akinator\\VueApp3\\VueApp3.Server\\Properties\\launchSettings.json",
+              "RelativeToolTip": "VueApp3.Server\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-20T13:20:47.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launch.json",
+              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\Desktop\\Aboba\\Akinator\\VueApp3\\vueapp3.client\\.vscode\\launch.json",
+              "RelativeDocumentMoniker": "vueapp3.client\\.vscode\\launch.json",
+              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\Desktop\\Aboba\\Akinator\\VueApp3\\vueapp3.client\\.vscode\\launch.json",
+              "RelativeToolTip": "vueapp3.client\\.vscode\\launch.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-20T13:19:33.865Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "VueApp3.Server.csproj",
-              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\VueApp3\\VueApp3.Server\\VueApp3.Server.csproj",
-              "RelativeDocumentMoniker": "VueApp3.Server\\VueApp3.Server.csproj",
-              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\VueApp3\\VueApp3.Server\\VueApp3.Server.csproj",
-              "RelativeToolTip": "VueApp3.Server\\VueApp3.Server.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-19T20:32:03.9Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "vite.config.js",
-              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\VueApp3\\vueapp3.client\\vite.config.js",
+              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\Desktop\\Aboba\\Akinator\\VueApp3\\vueapp3.client\\vite.config.js",
               "RelativeDocumentMoniker": "vueapp3.client\\vite.config.js",
-              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\VueApp3\\vueapp3.client\\vite.config.js",
+              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\Desktop\\Aboba\\Akinator\\VueApp3\\vueapp3.client\\vite.config.js",
               "RelativeToolTip": "vueapp3.client\\vite.config.js",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAwDYAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-19T20:21:47.205Z"
+              "WhenOpened": "2025-05-20T13:10:50.169Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "jsconfig.json",
-              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\VueApp3\\vueapp3.client\\jsconfig.json",
-              "RelativeDocumentMoniker": "vueapp3.client\\jsconfig.json",
-              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\VueApp3\\vueapp3.client\\jsconfig.json",
-              "RelativeToolTip": "vueapp3.client\\jsconfig.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-19T20:21:41.469Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\VueApp3\\VueApp3.Server\\appsettings.json",
-              "RelativeDocumentMoniker": "VueApp3.Server\\appsettings.json",
-              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\VueApp3\\VueApp3.Server\\appsettings.json",
-              "RelativeToolTip": "VueApp3.Server\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-19T20:21:33.421Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\VueApp3\\VueApp3.Server\\Database\\AppDBContext.cs",
-              "RelativeDocumentMoniker": "VueApp3.Server\\Database\\AppDBContext.cs",
-              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\VueApp3\\VueApp3.Server\\Database\\AppDBContext.cs",
-              "RelativeToolTip": "VueApp3.Server\\Database\\AppDBContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T20:12:19.137Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\VueApp3\\VueApp3.Server\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\Desktop\\Aboba\\Akinator\\VueApp3\\VueApp3.Server\\Program.cs",
               "RelativeDocumentMoniker": "VueApp3.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\source\\repos\\VueApp3\\VueApp3.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\\u0412\u0430\u0441\u0438\u043B\u0438\u0439 \u041E\u0441\u0438\u043F\u043E\u0432\\Desktop\\Aboba\\Akinator\\VueApp3\\VueApp3.Server\\Program.cs",
               "RelativeToolTip": "VueApp3.Server\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAYwFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T19:59:46.115Z",
               "EditorCaption": ""

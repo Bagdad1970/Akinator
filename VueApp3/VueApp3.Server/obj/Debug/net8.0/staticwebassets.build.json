@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "FATa+AaNu4lEQaCjPTW2ZvGjhlnRb+J+Gp90WNQCqws=",
+  "Hash": "CLeDQ6acoJZUjONc2Jd7jPHE5/HYgk1DTte6iMxBYUE=",
   "Source": "VueApp3.Server",
   "BasePath": "_content/VueApp3.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\Василий Осипов\\source\\repos\\VueApp3\\vueapp3.client\\vueapp3.client.esproj",
+      "Identity": "C:\\Users\\Василий Осипов\\Desktop\\Aboba\\Akinator\\VueApp3\\vueapp3.client\\vueapp3.client.esproj",
       "Version": 2,
       "Source": "vueapp3.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",

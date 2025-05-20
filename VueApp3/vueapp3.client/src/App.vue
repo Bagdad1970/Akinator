@@ -158,7 +158,7 @@
         username: '',
         userId: null,
         authError: '',
-        API_URL: 'http://localhost:5197',
+        API_URL: 'http://localhost:8080',
         statistics: {
           userId: null,
           sessionStart: null,

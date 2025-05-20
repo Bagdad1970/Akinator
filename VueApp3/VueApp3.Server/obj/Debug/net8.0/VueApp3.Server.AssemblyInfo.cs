@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VueApp3.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3339f2edcd3951ea0dda9857f9aa7b81ac79fa6e")]
 [assembly: System.Reflection.AssemblyProductAttribute("VueApp3.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VueApp3.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

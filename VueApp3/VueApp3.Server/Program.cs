@@ -56,6 +56,20 @@ builder.Services.AddCors(options =>
     });
 });
 
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    serverOptions.ListenAnyIP(8080);
+});
+
+builder.Services.AddHttpClient("NoSSL").ConfigurePrimaryHttpMessageHandler(() =>
+{
+    return new HttpClientHandler
+    {
+        ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true
+    };
+});
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline
@@ -68,6 +82,7 @@ if (app.Environment.IsDevelopment())
 app.UseCors("AllowAll");
 app.UseAuthentication();
 app.UseAuthorization();
+
 
 // Add minimal API endpoints for Prolog interaction
 var prolog = app.Services.GetRequiredService<PrologService>();
